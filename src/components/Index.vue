@@ -1,5 +1,7 @@
 <template>
-    
+    <div class="wrapper">
+
+    </div>
 </template>
 
 <script>
@@ -8,6 +10,8 @@
     }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+    .wrapper {
+        padding: 20px;
+    }
 </style>
