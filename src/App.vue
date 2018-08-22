@@ -1,29 +1,23 @@
 <template>
-  <div id="app">
-    <Index></Index>
+  <div id="app" class="wrapper">
+    <Section title="ACTIVE"></Section>
+    <Section title="DONE"></Section>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
-import Index from './components/Index';
+import Section from './components/Section';
 
 export default {
   name: 'app',
   components: {
-      HelloWorld,
-      Index
+      Section
   }
 }
 </script>
 
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>

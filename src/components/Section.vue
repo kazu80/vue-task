@@ -1,0 +1,27 @@
+<template>
+    <div class="wrapper">
+        <div class="title">{{title}}</div>
+        <div class="task-wrapper"></div>
+    </div>
+</template>
+
+<script>
+    export default {
+        name: 'Section.vue',
+        props: ['title']
+    }
+</script>
+
+<style scoped lang="scss">
+    .wrapper {
+        padding: 60px;
+
+        .title {
+            margin-bottom: 40px;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 100%;
+            letter-spacing: .15em;
+        }
+    }
+</style>
