@@ -1,6 +1,6 @@
 <template>
-    <div class="wrapper">
-        <div class="wrapper-inner">
+    <div class="wrapper" v-bind:class="classObject">
+        <div class="wrapper-inner" v-bind:class="classObject">
             <div class="title">{{title}}</div>
             <div class="desc">
                 <slot></slot>
@@ -12,7 +12,17 @@
 <script>
     export default {
         name: 'Task',
-        props: ['title']
+        props: ['title', 'priority'],
+        computed: {
+            classObject: function () {
+                return {
+                    urgent: this.priority === 'Urgent',
+                    high: this.priority === 'High',
+                    medium: this.priority === 'Medium',
+                    low: this.priority === 'Low'
+                }
+            }
+        }
     }
 </script>
 
@@ -27,7 +37,6 @@
         width: calc(62px * var(--coefficient));
         height: calc(100px * var(--coefficient));
         border-radius: 5px;
-        background-color: rgb(255, 255, 170);
         box-shadow: 0 0 0 rgba(12, 12, 8, 0);
         transform: scale(1);
         transition: box-shadow 200ms ease-out, transform 200ms 50ms ease-in;
@@ -37,13 +46,48 @@
             transform: scale(1.01);
         }
 
+        &.urgent {
+            background-color: rgb(255, 255, 170);
+        }
+
+        &.high {
+            background-color: rgb(198, 49, 177);
+        }
+
+        &.medium {
+            background-color: rgb(173, 216, 230);
+        }
+
+        &.low {
+            background-color: rgb(245, 245, 245);
+        }
+
         .wrapper-inner {
             padding: 15px;
             width: 100%;
             height: 100%;
             border-radius: 5px;
-            background-color: rgba(255, 204, 0, .7);
+
+            &.urgent {
+                background-color: rgba(255, 204, 0, .7);
+            }
+
+            &.high {
+                background-color: rgba(100, 74, 119, .7);
+            }
+
+            &.medium {
+                background-color: rgba(119, 184, 218, .7);
+            }
+
+            &.low {
+                background-color: rgba(207, 215, 223, .7);
+            }
         }
+    }
+
+    .wrapper[priority] {
+        background-color: rgb(255, 255, 170);
     }
 
     .title {

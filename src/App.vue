@@ -1,10 +1,16 @@
 <template>
   <div class="wrapper">
     <Section title="ACTIVE">
-      <Task class="task" title="ACTIVEタスク一覧">
+      <Task class="task" title="ACTIVEタスク一覧" priority="Urgent">
         ACTIVEタスク一覧を表示させる。ACTIVEタスク一覧を表示させる。ACTIVEタスク一覧を表示させる。ACTIVEタスク一覧を表示させる。
       </Task>
-      <Task class="task" title="DONEタスク一覧">
+      <Task class="task" title="DONEタスク一覧" priority="High">
+        DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。
+      </Task>
+      <Task class="task" title="DONEタスク一覧" priority="Medium">
+        DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。
+      </Task>
+      <Task class="task" title="DONEタスク一覧" priority="Low">
         DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。
       </Task>
     </Section>
