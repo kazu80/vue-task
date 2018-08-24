@@ -46,8 +46,6 @@
         }
     }
 
-
-
     .title {
         margin-bottom: 10px;
         max-height: var(--height-line);

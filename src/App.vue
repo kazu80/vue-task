@@ -1,10 +1,10 @@
 <template>
-  <div id="app" class="wrapper">
+  <div class="wrapper">
     <Section title="ACTIVE">
-      <Task title="ACTIVEタスク一覧">
+      <Task class="task" title="ACTIVEタスク一覧">
         ACTIVEタスク一覧を表示させる。ACTIVEタスク一覧を表示させる。ACTIVEタスク一覧を表示させる。ACTIVEタスク一覧を表示させる。
       </Task>
-      <Task title="DONEタスク一覧">
+      <Task class="task" title="DONEタスク一覧">
         DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。
       </Task>
     </Section>
@@ -26,7 +26,11 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
+  .task {
+    margin-right: 15px;
 
-}
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 </style>
