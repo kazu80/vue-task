@@ -1,30 +1,30 @@
 <template>
   <div class="wrapper">
-    <Section class="section" title="ACTIVE">
-      <Task class="task" title="ACTIVEタスク一覧" priority="Urgent">
+    <Section class="section active" title="ACTIVE">
+      <Task class="task" title="ACTIVEタスク一覧" priority="Urgent" state="Active">
         ACTIVEタスク一覧を表示させる。ACTIVEタスク一覧を表示させる。ACTIVEタスク一覧を表示させる。ACTIVEタスク一覧を表示させる。
       </Task>
-      <Task class="task" title="DONEタスク一覧" priority="High">
+      <Task class="task" title="DONEタスク一覧" priority="High" state="Active">
         DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。
       </Task>
-      <Task class="task" title="DONEタスク一覧" priority="Medium">
+      <Task class="task" title="DONEタスク一覧" priority="Medium" state="Active">
         DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。
       </Task>
-      <Task class="task" title="DONEタスク一覧" priority="Low">
+      <Task class="task" title="DONEタスク一覧" priority="Low" state="Active">
         DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。
       </Task>
     </Section>
-    <Section class="section" title="DONE">
-      <Task class="task" title="ACTIVEタスク一覧" priority="Urgent">
+    <Section class="section done" title="DONE">
+      <Task class="task" title="ACTIVEタスク一覧" priority="Urgent" state="Done">
         ACTIVEタスク一覧を表示させる。ACTIVEタスク一覧を表示させる。ACTIVEタスク一覧を表示させる。ACTIVEタスク一覧を表示させる。
       </Task>
-      <Task class="task" title="DONEタスク一覧" priority="High">
+      <Task class="task" title="DONEタスク一覧" priority="High" state="Done">
         DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。
       </Task>
-      <Task class="task" title="DONEタスク一覧" priority="Medium">
+      <Task class="task" title="DONEタスク一覧" priority="Medium" state="Done">
         DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。
       </Task>
-      <Task class="task" title="DONEタスク一覧" priority="Low">
+      <Task class="task" title="DONEタスク一覧" priority="Low" state="Done">
         DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。DONEタスク一覧を表示させる。
       </Task>
     </Section>
