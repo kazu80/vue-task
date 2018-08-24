@@ -73,7 +73,8 @@ body {
 }
 
 .wrapper.footer-bottom {
-    margin-bottom: -56px;
+    /* margin-bottom: -56px; */
+    margin-bottom: 80px;
 }
 
 .footer {
