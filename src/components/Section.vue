@@ -1,7 +1,9 @@
 <template>
     <div class="wrapper">
         <div class="title">{{title}}</div>
-        <div class="task-wrapper"></div>
+        <div class="task-wrapper">
+            <slot></slot>
+        </div>
     </div>
 </template>
 
@@ -22,6 +24,12 @@
             font-weight: 700;
             line-height: 100%;
             letter-spacing: .15em;
+        }
+
+        .task-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
     }
 </style>
