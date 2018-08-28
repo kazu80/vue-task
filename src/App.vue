@@ -1,5 +1,7 @@
 <template>
   <div class="wrapper">
+    <Data v-on:GET_AJAX_COMPLETE="onGetAjaxComplete"></Data>
+
     <Section class="section active" title="ACTIVE">
       <Task class="task" title="ACTIVEタスク一覧" priority="Urgent" state="Active">
         ACTIVEタスク一覧を表示させる。ACTIVEタスク一覧を表示させる。ACTIVEタスク一覧を表示させる。ACTIVEタスク一覧を表示させる。
@@ -34,13 +36,21 @@
 <script>
 import Section from './components/Section';
 import Task from './components/Task';
+import Data from './components/Data';
 
 export default {
   name: 'app',
   components: {
       Section,
-      Task
-  }
+      Task,
+      Data
+  },
+    methods: {
+      onGetAjaxComplete: function (data) {
+          console.log(data);
+          this.$store.commit('setTask', data);
+      }
+    }
 }
 </script>
 
